@@ -1,0 +1,74 @@
+[05-Apr-2017 03:48:34 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched'
+Stack trace: #0 /opt/lampp/htdocs/login_app/public/index.php(73): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/login_app/Core/Router.php' on line 123
+[05-Apr-2017 03:50:27 Europe/Berlin] Uncaught exception: 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'loginapp''
+Stack trace: #0 /opt/lampp/htdocs/login_app/Core/Model.php(24): PDO->__construct('mysql:host=loca...', 'dbuser', 'Password')
+#1 /opt/lampp/htdocs/login_app/App/Models/Post.php(18): Core\Model::getDB()
+#2 /opt/lampp/htdocs/login_app/App/Controllers/Posts.php(21): App\models\Post::getAll()
+#3 [internal function]: App\Controllers\Posts->indexAction()
+#4 /opt/lampp/htdocs/login_app/Core/Controller.php(37): call_user_func_array(Array, Array)
+#5 /opt/lampp/htdocs/login_app/Core/Router.php(112): Core\Controller->__call('index', Array)
+#6 /opt/lampp/htdocs/login_app/Core/Router.php(112): App\Controllers\Posts->index()
+#7 /opt/lampp/htdocs/login_app/public/index.php(73): Core\Router->dispatch('posts/index')
+#8 {main}
+Trhown in '/opt/lampp/htdocs/login_app/Core/Model.php' on line 24
+[05-Apr-2017 03:51:09 Europe/Berlin] Uncaught exception: 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'loginapp''
+Stack trace: #0 /opt/lampp/htdocs/login_app/Core/Model.php(24): PDO->__construct('mysql:host=loca...', 'dbuser', 'Password')
+#1 /opt/lampp/htdocs/login_app/App/Models/Post.php(18): Core\Model::getDB()
+#2 /opt/lampp/htdocs/login_app/App/Controllers/Posts.php(21): App\models\Post::getAll()
+#3 [internal function]: App\Controllers\Posts->indexAction()
+#4 /opt/lampp/htdocs/login_app/Core/Controller.php(37): call_user_func_array(Array, Array)
+#5 /opt/lampp/htdocs/login_app/Core/Router.php(112): Core\Controller->__call('index', Array)
+#6 /opt/lampp/htdocs/login_app/Core/Router.php(112): App\Controllers\Posts->index()
+#7 /opt/lampp/htdocs/login_app/public/index.php(73): Core\Router->dispatch('posts/index')
+#8 {main}
+Trhown in '/opt/lampp/htdocs/login_app/Core/Model.php' on line 24
+[05-Apr-2017 04:19:03 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Signup not found'
+Stack trace: #0 /opt/lampp/htdocs/login_app/public/index.php(73): Core\Router->dispatch('signup/new')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/login_app/Core/Router.php' on line 119
+[05-Apr-2017 04:19:42 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Signup not found'
+Stack trace: #0 /opt/lampp/htdocs/login_app/public/index.php(73): Core\Router->dispatch('signup/new')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/login_app/Core/Router.php' on line 119
+[05-Apr-2017 04:21:09 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Signup not found'
+Stack trace: #0 /opt/lampp/htdocs/login_app/public/index.php(72): Core\Router->dispatch('signup/new')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/login_app/Core/Router.php' on line 119
+[05-Apr-2017 04:21:22 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Signup not found'
+Stack trace: #0 /opt/lampp/htdocs/login_app/public/index.php(72): Core\Router->dispatch('signup/new')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/login_app/Core/Router.php' on line 119
+[05-Apr-2017 04:24:37 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Signup not found'
+Stack trace: #0 /opt/lampp/htdocs/login_app/public/index.php(72): Core\Router->dispatch('signup/new')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/login_app/Core/Router.php' on line 119
+[05-Apr-2017 04:26:02 Europe/Berlin] Uncaught exception: 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loginapp.posts' doesn't exist'
+Stack trace: #0 /opt/lampp/htdocs/login_app/App/Models/Post.php(20): PDO->query('SELECT id, titl...')
+#1 /opt/lampp/htdocs/login_app/App/Controllers/Posts.php(21): App\models\Post::getAll()
+#2 [internal function]: App\Controllers\Posts->indexAction()
+#3 /opt/lampp/htdocs/login_app/Core/Controller.php(37): call_user_func_array(Array, Array)
+#4 /opt/lampp/htdocs/login_app/Core/Router.php(112): Core\Controller->__call('index', Array)
+#5 /opt/lampp/htdocs/login_app/Core/Router.php(112): App\Controllers\Posts->index()
+#6 /opt/lampp/htdocs/login_app/public/index.php(51): Core\Router->dispatch('posts/index')
+#7 {main}
+Trhown in '/opt/lampp/htdocs/login_app/App/Models/Post.php' on line 20
+[05-Apr-2017 04:26:23 Europe/Berlin] Uncaught exception: 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'loginapp.posts' doesn't exist'
+Stack trace: #0 /opt/lampp/htdocs/login_app/App/Models/Post.php(20): PDO->query('SELECT id, titl...')
+#1 /opt/lampp/htdocs/login_app/App/Controllers/Posts.php(21): App\models\Post::getAll()
+#2 [internal function]: App\Controllers\Posts->indexAction()
+#3 /opt/lampp/htdocs/login_app/Core/Controller.php(37): call_user_func_array(Array, Array)
+#4 /opt/lampp/htdocs/login_app/Core/Router.php(112): Core\Controller->__call('index', Array)
+#5 /opt/lampp/htdocs/login_app/Core/Router.php(112): App\Controllers\Posts->index()
+#6 /opt/lampp/htdocs/login_app/public/index.php(51): Core\Router->dispatch('posts/index')
+#7 {main}
+Trhown in '/opt/lampp/htdocs/login_app/App/Models/Post.php' on line 20
+[05-Apr-2017 04:27:32 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Signup not found'
+Stack trace: #0 /opt/lampp/htdocs/login_app/public/index.php(51): Core\Router->dispatch('signup/new')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/login_app/Core/Router.php' on line 119
+[05-Apr-2017 04:28:05 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Signup not found'
+Stack trace: #0 /opt/lampp/htdocs/login_app/public/index.php(51): Core\Router->dispatch('signup/new')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/login_app/Core/Router.php' on line 119

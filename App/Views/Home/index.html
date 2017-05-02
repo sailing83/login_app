@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+
+	<div class="container">
+		<div class="row">
+			<div class="jumbotron">
+				<h1>Welcome!</h1>
+
+				{% if current_user %}
+				<p class="text-info">Hello, {{current_user.name}}</p>
+				<a class="btn btn-primary btn-lg" href="/logout">Log out</a>
+				{% else %}
+				<p class="text-info">This is a simple registration/login system based on MVC</p> 
+				<br/>
+				<a class="btn btn-primary btn-lg" href="/signup/new">Sign up</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<a class="btn btn-success btn-lg" href="/login">Log in</a>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+
+    
+{% endblock %}

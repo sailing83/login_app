@@ -1,0 +1,12 @@
+[03-Apr-2017 08:30:13 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched'
+Stack trace: #0 /opt/lampp/htdocs/framework/public/index.php(72): Core\Router->dispatch('abc')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/framework/Core/Router.php' on line 123
+[03-Apr-2017 08:36:54 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched'
+Stack trace: #0 /opt/lampp/htdocs/framework/public/index.php(72): Core\Router->dispatch('abc')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/framework/Core/Router.php' on line 123
+[03-Apr-2017 08:42:43 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched'
+Stack trace: #0 /opt/lampp/htdocs/framework/public/index.php(72): Core\Router->dispatch('abc')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/framework/Core/Router.php' on line 123

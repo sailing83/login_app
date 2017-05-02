@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block title %}Reset Password{% endblock %}
+
+{%block footer%}
+
+  <script src="/js/hideShowPassword.min.js"></script>
+  <script src="/js/app.js"></script>
+  <script>
+
+    $(function(){
+
+      $('#formPassword').validate({
+        rules: {
+          password: {
+            required: true,
+            minlength: 6,
+            validPassword: true
+          },
+          password_confirmation: {
+            required: true,
+            equalTo: '#inputPassword'
+          }
+        }
+      });
+    });
+  </script>
+{%endblock%}
+
+{% block body %}
+
+
+  <div class="container">
+    <div class="row">
+      <div class="jumbotron">
+        <h1>Reset Password</h1> 
+        <p class="text-info">Reset your password because you forgot it.</p> 
+      </div>
+      <div class="col-sm-9 col-sm-offset-1">
+          <form method="post" action="/password/reset-password" id="formPassword" class="form-horizontal">
+          		<input type="hidden" name="token" value="{{ token }}" />
+                <div class="form-group">
+                    <label for="inputName" class="col-sm-3 text" >Your name</label>
+                    <div class="col-sm-9">
+                    <input type="text" id="inputName" class="form-control" name="name" value="{{user.name}}" autofocus required readonly="readonly" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail" class="col-sm-3 text" >Email address</label>
+                    <div class="col-sm-9">
+                    <input type="email" id="inputEmail" class="form-control" name="email" value="{{user.email}}"  autofocus required type="email" readonly="readonly" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword" class="col-sm-3 text">Password</label>
+                    <div class="col-sm-9">
+                    <input type="password" id="inputPassword" class="form-control" name="password" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPasswordConfirmation" class="col-sm-3 text">Repeat Password</label>
+                    <div class="col-sm-9">
+                    <input type="password" id="inputPasswordConfirmation" class="form-control" name="password_confirmation" required />
+                    </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-lg btn-primary" >Reset</button>
+                </div>
+            </form>
+          </div>
+        </div>
+    </div>
+
+    
+    <div class="container">
+    {% if user.errors is not empty %}
+      <p>Errors: </p>
+      <ul>
+        {% for error in user.errors %}
+            <li>{{ error }}</li>
+        {% endfor %}
+
+      </ul>
+    {% endif %} 
+    </div>
+
+{% endblock %}

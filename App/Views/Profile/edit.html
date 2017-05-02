@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+
+{% block title %}Profile{% endblock %}
+
+{%block footer%}
+  <script>
+
+    //Define customized validation rule
+    $.validator.addMethod('validPassword', function(value, element, param) {
+        if(value!='') {
+          if (value.match(/.*[a-z]+.*/i) == null) {
+            return false;
+          }
+          if (value.match(/.*\d+.*/) == null) {
+            return false;
+          }
+        }
+        return true;
+    }, 'Must contain at least one letter and one number');
+
+    $(function(){
+
+    	var userId = '{{user.id}}';
+
+      $('#formProfile').validate({
+        rules: {
+          name: 'required',
+          email: {
+            required: true,
+            email: true,
+            remote: {
+            	url: '/account/validate-email',
+            	data: {
+            		ignore_id: function() {
+            			return userId;
+            		}
+            	}
+            }
+          },
+          password: {
+            minlength: 6,
+            validPassword: true
+          },
+          password_confirmation: {
+            equalTo: '#inputPassword'
+          }
+        },
+        messages: {
+          email: {
+            remote: 'The email already taken.'
+          }
+        }
+      });
+    });
+  </script>
+{%endblock%}
+
+{% block body %}
+
+
+  <div class="container">
+    <div class="row">
+      <div class="jumbotron">
+        <h1>Profile</h1> 
+        <p class="text-info">Edit your profile</p> 
+      </div>
+      <div class="container">
+        <div class="col-sm-9 col-sm-offset-1">
+          <form method="post" action="/profile/update" id="formProfile" class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputName" class="col-sm-3 text" >Your name</label>
+                    <div class="col-sm-9">
+                      <input type="text" id="inputName" class="form-control" name="name" value="{{user.name}}" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail" class="col-sm-3 text" >Email address</label>
+                    <div class="col-sm-9">
+                    <input type="email" id="inputEmail" class="form-control" name="email" value="{{user.email}}"  autofocus required type="email" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword" class="col-sm-3 text">Password</label>
+                    <div class="col-sm-9">
+                    <input type="password" id="inputPassword" class="form-control" name="password" aria-describedby="helpBlock" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPasswordConfirmation" class="col-sm-3 text">Repeat Password</label>
+                    <div class="col-sm-9">
+                    <input type="password" id="inputPasswordConfirmation" class="form-control" name="password_confirmation" />
+                    <span id="helpBlock" class="help-block" >Leave password blank to keep current password</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-lg btn-primary" >Save</button>
+                  <a class="btn btn-lg btn-warning" href="/profile/show" >Cancel</a>
+                </div>
+            </form>
+          </div>
+        </div>
+    </div>
+
+    
+
+    {% if user.errors is not empty %}
+      <p>Errors: </p>
+      <ul>
+        {% for error in user.errors %}
+            <li>{{ error }}</li>
+        {% endfor %}
+
+      </ul>
+    {% endif %} 
+
+{% endblock %}

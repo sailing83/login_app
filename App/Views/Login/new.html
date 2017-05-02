@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Login {% endblock %}
+
+{% block body %}
+
+	<div class="container">
+		<div class="row">
+			<div class="jumbotron">
+				<h1>Log in</h1>
+				<p class="text-info">Using your email and password to log in</p> 
+			</div>
+			<div class="container">
+				<div class="col-sm-9 col-sm-offset-1">
+					<form action="/login/create" method="post" class="form-horizontal">
+				        <div class="form-group">
+				            <label for="inputEmail" class="col-sm-3 text" >Email address</label>
+				            <div class="col-sm-9">
+				            	<input type="email" id="inputEmail" class="form-control" name="email" autofocus value="{{email}}" />
+				            </div>
+				        </div>
+				        <div class="form-group">
+				            <label for="inputPassword" class="col-sm-3 text">Password</label>
+				            <div class="col-sm-9">
+				            	<input type="password" id="inputPassword" class="form-control" name="password"/>
+				            </div>
+				        </div>
+				        <div class="checkbox">
+						    <label>
+						      <input type="checkbox" name="remember_me" {% if remember_me %} checked="checked" {%endif%}>  Remember Me
+						    </label>
+						  </div>
+				        <div class="text-center">
+				        	<button type="submit" class="btn btn-lg btn-primary" >Log in</button>
+				        	<a class="btn btn-lg btn-warning" href="/password/forgot" >Forget Password</a>
+				        </div>
+				    </form>
+		    	</div>
+		    </div>
+		</div>
+	</div>
+
+    
+
+    
+{% endblock %}

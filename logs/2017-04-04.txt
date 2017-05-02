@@ -1,0 +1,60 @@
+[04-Apr-2017 11:19:52 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched'
+Stack trace: #0 /opt/lampp/htdocs/framework/public/index.php(72): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/framework/Core/Router.php' on line 123
+[04-Apr-2017 11:19:52 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched'
+Stack trace: #0 /opt/lampp/htdocs/framework/public/index.php(72): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/framework/Core/Router.php' on line 123
+[04-Apr-2017 14:18:38 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched'
+Stack trace: #0 /opt/lampp/htdocs/framework/public/index.php(72): Core\Router->dispatch('post')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/framework/Core/Router.php' on line 123
+[04-Apr-2017 14:18:39 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched'
+Stack trace: #0 /opt/lampp/htdocs/framework/public/index.php(72): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/framework/Core/Router.php' on line 123
+[04-Apr-2017 14:18:39 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched'
+Stack trace: #0 /opt/lampp/htdocs/framework/public/index.php(72): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/framework/Core/Router.php' on line 123
+[04-Apr-2017 14:18:40 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched'
+Stack trace: #0 /opt/lampp/htdocs/framework/public/index.php(72): Core\Router->dispatch('posts')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/framework/Core/Router.php' on line 123
+[04-Apr-2017 14:22:41 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched'
+Stack trace: #0 /opt/lampp/htdocs/framework/public/index.php(72): Core\Router->dispatch('posts')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/framework/Core/Router.php' on line 123
+[04-Apr-2017 14:24:32 Europe/Berlin] Uncaught exception: 'Exception' with message 'Method indexkkAction not found in controller App\Controllers\Posts'
+Stack trace: #0 /opt/lampp/htdocs/framework/Core/Router.php(112): Core\Controller->__call('indexkk', Array)
+#1 /opt/lampp/htdocs/framework/Core/Router.php(112): App\Controllers\Posts->indexkk()
+#2 /opt/lampp/htdocs/framework/public/index.php(72): Core\Router->dispatch('posts/indexkk')
+#3 {main}
+Trhown in '/opt/lampp/htdocs/framework/Core/Controller.php' on line 42
+[04-Apr-2017 14:24:41 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Postsll not found'
+Stack trace: #0 /opt/lampp/htdocs/framework/public/index.php(72): Core\Router->dispatch('postsll/index')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/framework/Core/Router.php' on line 119
+[04-Apr-2017 14:24:53 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched'
+Stack trace: #0 /opt/lampp/htdocs/framework/public/index.php(72): Core\Router->dispatch('posts')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/framework/Core/Router.php' on line 123
+[04-Apr-2017 14:24:56 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched'
+Stack trace: #0 /opt/lampp/htdocs/framework/public/index.php(72): Core\Router->dispatch('postsj')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/framework/Core/Router.php' on line 123
+[04-Apr-2017 14:24:58 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched'
+Stack trace: #0 /opt/lampp/htdocs/framework/public/index.php(72): Core\Router->dispatch('posts')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/framework/Core/Router.php' on line 123
+[04-Apr-2017 14:25:02 Europe/Berlin] Uncaught exception: 'Exception' with message 'Method createAction not found in controller App\Controllers\Posts'
+Stack trace: #0 /opt/lampp/htdocs/framework/Core/Router.php(112): Core\Controller->__call('create', Array)
+#1 /opt/lampp/htdocs/framework/Core/Router.php(112): App\Controllers\Posts->create()
+#2 /opt/lampp/htdocs/framework/public/index.php(72): Core\Router->dispatch('posts/create')
+#3 {main}
+Trhown in '/opt/lampp/htdocs/framework/Core/Controller.php' on line 42
+[04-Apr-2017 14:27:06 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Admin not found'
+Stack trace: #0 /opt/lampp/htdocs/framework/public/index.php(72): Core\Router->dispatch('admin/users')
+#1 {main}
+Trhown in '/opt/lampp/htdocs/framework/Core/Router.php' on line 119

@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block title %}Sign Up{% endblock %}
+
+{%block footer%}
+
+  <script src="/js/hideShowPassword.min.js"></script>
+  <script src="/js/app.js"></script>
+  <script>
+
+    $(function(){
+
+      $('#formSignup').validate({
+        rules: {
+          name: 'required',
+          email: {
+            required: true,
+            email: true,
+            remote: '/account/validate-email'
+          },
+          password: {
+            required: true,
+            minlength: 6,
+            validPassword: true
+          },
+          password_confirmation: {
+            required: true,
+            equalTo: '#inputPassword'
+          }
+        },
+        messages: {
+          email: {
+            remote: 'The email already taken.'
+          }
+        }
+      });
+    });
+  </script>
+{%endblock%}
+
+{% block body %}
+
+
+  <div class="container">
+    <div class="row">
+      <div class="jumbotron">
+        <h1>Sign up</h1> 
+        <p class="text-info">Input the information below to register a new user</p> 
+      </div>
+      <div class="col-sm-9 col-sm-offset-1">
+          <form method="post" action="/signup/create" id="formSignup" class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputName" class="col-sm-3 text" >Your name</label>
+                    <div class="col-sm-9">
+                    <input type="text" id="inputName" class="form-control" name="name" value="{{user.name}}" autofocus required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail" class="col-sm-3 text" >Email address</label>
+                    <div class="col-sm-9">
+                    <input type="email" id="inputEmail" class="form-control" name="email" value="{{user.email}}"  autofocus required type="email" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword" class="col-sm-3 text">Password</label>
+                    <div class="col-sm-9">
+                    <input type="password" id="inputPassword" class="form-control" name="password" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPasswordConfirmation" class="col-sm-3 text">Repeat Password</label>
+                    <div class="col-sm-9">
+                    <input type="password" id="inputPasswordConfirmation" class="form-control" name="password_confirmation" required />
+                    </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-lg btn-primary" >Sign up</button>
+                  <a class="btn btn-lg btn-warning" href="/" >Home</a>
+                </div>
+            </form>
+          </div>
+        </div>
+    </div>
+
+    
+
+    {% if user.errors is not empty %}
+      <p>Errors: </p>
+      <ul>
+        {% for error in user.errors %}
+            <li>{{ error }}</li>
+        {% endfor %}
+
+      </ul>
+    {% endif %} 
+
+{% endblock %}

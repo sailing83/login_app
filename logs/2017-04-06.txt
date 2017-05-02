@@ -1,0 +1,63 @@
+[06-Apr-2017 07:42:53 Europe/Berlin] Uncaught exception: 'ErrorException' with message 'Use of undefined constant HTTP_REFERER - assumed 'HTTP_REFERER''
+Stack trace: #0 /opt/lampp/htdocs/login_app/App/Controllers/Signup.php(41): Core\Error::errorHandler(8, 'Use of undefine...', '/opt/lampp/htdo...', 41, Array)
+#1 [internal function]: App\Controllers\Signup->successAction()
+#2 /opt/lampp/htdocs/login_app/Core/Controller.php(37): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/login_app/Core/Router.php(112): Core\Controller->__call('success', Array)
+#4 /opt/lampp/htdocs/login_app/Core/Router.php(112): App\Controllers\Signup->success()
+#5 /opt/lampp/htdocs/login_app/public/index.php(51): Core\Router->dispatch('signup/success')
+#6 {main}
+Trhown in '/opt/lampp/htdocs/login_app/App/Controllers/Signup.php' on line 41
+[06-Apr-2017 07:43:47 Europe/Berlin] Uncaught exception: 'ErrorException' with message 'Use of undefined constant HTTP_REFERER - assumed 'HTTP_REFERER''
+Stack trace: #0 /opt/lampp/htdocs/login_app/App/Controllers/Signup.php(41): Core\Error::errorHandler(8, 'Use of undefine...', '/opt/lampp/htdo...', 41, Array)
+#1 [internal function]: App\Controllers\Signup->successAction()
+#2 /opt/lampp/htdocs/login_app/Core/Controller.php(37): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/login_app/Core/Router.php(112): Core\Controller->__call('success', Array)
+#4 /opt/lampp/htdocs/login_app/Core/Router.php(112): App\Controllers\Signup->success()
+#5 /opt/lampp/htdocs/login_app/public/index.php(51): Core\Router->dispatch('signup/success')
+#6 {main}
+Trhown in '/opt/lampp/htdocs/login_app/App/Controllers/Signup.php' on line 41
+[06-Apr-2017 07:44:02 Europe/Berlin] Uncaught exception: 'ErrorException' with message 'Use of undefined constant HTTP_REFERER - assumed 'HTTP_REFERER''
+Stack trace: #0 /opt/lampp/htdocs/login_app/App/Controllers/Signup.php(41): Core\Error::errorHandler(8, 'Use of undefine...', '/opt/lampp/htdo...', 41, Array)
+#1 [internal function]: App\Controllers\Signup->successAction()
+#2 /opt/lampp/htdocs/login_app/Core/Controller.php(37): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/login_app/Core/Router.php(112): Core\Controller->__call('success', Array)
+#4 /opt/lampp/htdocs/login_app/Core/Router.php(112): App\Controllers\Signup->success()
+#5 /opt/lampp/htdocs/login_app/public/index.php(51): Core\Router->dispatch('signup/success')
+#6 {main}
+Trhown in '/opt/lampp/htdocs/login_app/App/Controllers/Signup.php' on line 41
+[06-Apr-2017 07:44:54 Europe/Berlin] Uncaught exception: 'ErrorException' with message 'Use of undefined constant HTTP_REFERER - assumed 'HTTP_REFERER''
+Stack trace: #0 /opt/lampp/htdocs/login_app/App/Controllers/Signup.php(41): Core\Error::errorHandler(8, 'Use of undefine...', '/opt/lampp/htdo...', 41, Array)
+#1 [internal function]: App\Controllers\Signup->successAction()
+#2 /opt/lampp/htdocs/login_app/Core/Controller.php(37): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/login_app/Core/Router.php(112): Core\Controller->__call('success', Array)
+#4 /opt/lampp/htdocs/login_app/Core/Router.php(112): App\Controllers\Signup->success()
+#5 /opt/lampp/htdocs/login_app/public/index.php(51): Core\Router->dispatch('signup/success')
+#6 {main}
+Trhown in '/opt/lampp/htdocs/login_app/App/Controllers/Signup.php' on line 41
+[06-Apr-2017 07:45:18 Europe/Berlin] Uncaught exception: 'ErrorException' with message 'Undefined index: HTTP_REFERER'
+Stack trace: #0 /opt/lampp/htdocs/login_app/App/Controllers/Signup.php(41): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 41, Array)
+#1 [internal function]: App\Controllers\Signup->successAction()
+#2 /opt/lampp/htdocs/login_app/Core/Controller.php(37): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/login_app/Core/Router.php(112): Core\Controller->__call('success', Array)
+#4 /opt/lampp/htdocs/login_app/Core/Router.php(112): App\Controllers\Signup->success()
+#5 /opt/lampp/htdocs/login_app/public/index.php(51): Core\Router->dispatch('signup/success')
+#6 {main}
+Trhown in '/opt/lampp/htdocs/login_app/App/Controllers/Signup.php' on line 41
+[06-Apr-2017 07:46:32 Europe/Berlin] Uncaught exception: 'ErrorException' with message 'Undefined index: HTTP_REFERER'
+Stack trace: #0 /opt/lampp/htdocs/login_app/App/Controllers/Signup.php(41): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 41, Array)
+#1 [internal function]: App\Controllers\Signup->successAction()
+#2 /opt/lampp/htdocs/login_app/Core/Controller.php(37): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/login_app/Core/Router.php(112): Core\Controller->__call('success', Array)
+#4 /opt/lampp/htdocs/login_app/Core/Router.php(112): App\Controllers\Signup->success()
+#5 /opt/lampp/htdocs/login_app/public/index.php(51): Core\Router->dispatch('signup/success')
+#6 {main}
+Trhown in '/opt/lampp/htdocs/login_app/App/Controllers/Signup.php' on line 41
+[06-Apr-2017 07:46:48 Europe/Berlin] Uncaught exception: 'ErrorException' with message 'Undefined index: HTTP_REFERER'
+Stack trace: #0 /opt/lampp/htdocs/login_app/App/Controllers/Signup.php(41): Core\Error::errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 41, Array)
+#1 [internal function]: App\Controllers\Signup->successAction()
+#2 /opt/lampp/htdocs/login_app/Core/Controller.php(37): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/login_app/Core/Router.php(112): Core\Controller->__call('success', Array)
+#4 /opt/lampp/htdocs/login_app/Core/Router.php(112): App\Controllers\Signup->success()
+#5 /opt/lampp/htdocs/login_app/public/index.php(51): Core\Router->dispatch('signup/success')
+#6 {main}
+Trhown in '/opt/lampp/htdocs/login_app/App/Controllers/Signup.php' on line 41

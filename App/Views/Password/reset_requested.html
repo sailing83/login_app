@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Login {% endblock %}
+
+{% block body %}
+
+	<div class="container">
+		<div class="row">
+			<div class="jumbotron">
+				<h1>Request password reset</h1>
+				<p class="text-info">Please check your email</p> 
+			</div>
+			<div class="container">
+				<div class="col-sm-9 col-sm-offset-1">
+					<form method="post" action="/password/request-reset" class="form-horizontal">
+				        <div class="form-group">
+				            <label for="inputEmail" class="col-sm-3 text" >Email address</label>
+				            <div class="col-sm-9">
+				            	<input type="email" id="inputEmail" class="form-control" name="email" autofocus value="{{email}}" />
+				            </div>
+				        </div>
+				        <div class="text-center">
+				        	<button type="submit" class="btn btn-lg btn-primary" >Send</button>
+				        	<a class="btn btn-lg btn-warning" href="/login/new" >Back</a>
+				        </div>
+				    </form>
+		    	</div>
+		    </div>
+		</div>
+	</div>
+
+
+	
+
+
+{% endblock %}

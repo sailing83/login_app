@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Profile{% endblock %}
+
+{% block body %}
+
+<div class="container">
+	<div class="jumbotron">
+        <h1>Your profile page</h1> 
+		<p class="text-info">Name: {{user.name}}</p>
+		<p class="text-info">Email: {{user.email}}</p>
+    </div>
+    <div class="text-center">
+        <a href="/profile/edit" class="btn btn-lg btn-primary" >Edit</a> 
+    </div>
+</div>
+	
+{% endblock %}
